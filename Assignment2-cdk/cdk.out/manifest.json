@@ -1,0 +1,276 @@
+{
+  "version": "32.0.0",
+  "artifacts": {
+    "Assignment2CdkStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "Assignment2CdkStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "Assignment2CdkStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "Assignment2CdkStack.template.json",
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/025280ec16e8ed576091534a2c8e36249895348a5430dd40994602e74f930499.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "Assignment2CdkStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "Assignment2CdkStack.assets"
+      ],
+      "metadata": {
+        "/Assignment2CdkStack/KnowledgeCatalogTable": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "KnowledgeCatalogTable50BCFD50"
+            }
+          }
+        ],
+        "/Assignment2CdkStack/KnowledgeCatalogTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KnowledgeCatalogTable50BCFD50"
+          }
+        ],
+        "/Assignment2CdkStack/RetrieveAll/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RetrieveAllServiceRole2106EC60"
+          }
+        ],
+        "/Assignment2CdkStack/RetrieveAll/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RetrieveAllServiceRoleDefaultPolicyC19A518A"
+          }
+        ],
+        "/Assignment2CdkStack/RetrieveAll/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RetrieveAll5461031F"
+          }
+        ],
+        "/Assignment2CdkStack/RetrieveAllCourse/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RetrieveAllCourseServiceRole87A586CC"
+          }
+        ],
+        "/Assignment2CdkStack/RetrieveAllCourse/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RetrieveAllCourseServiceRoleDefaultPolicy5DF55C2F"
+          }
+        ],
+        "/Assignment2CdkStack/RetrieveAllCourse/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RetrieveAllCourse32BCD7B9"
+          }
+        ],
+        "/Assignment2CdkStack/DeleteItem/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeleteItemServiceRole116FB321"
+          }
+        ],
+        "/Assignment2CdkStack/DeleteItem/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeleteItemServiceRoleDefaultPolicyAA6051E8"
+          }
+        ],
+        "/Assignment2CdkStack/DeleteItem/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeleteItem3B2526D2"
+          }
+        ],
+        "/Assignment2CdkStack/InsertItem/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InsertItemServiceRoleB4E0F2EF"
+          }
+        ],
+        "/Assignment2CdkStack/InsertItem/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InsertItemServiceRoleDefaultPolicy734CE276"
+          }
+        ],
+        "/Assignment2CdkStack/InsertItem/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InsertItem285D27A6"
+          }
+        ],
+        "/Assignment2CdkStack/Assignment2/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Assignment23C4DA4D4"
+          }
+        ],
+        "/Assignment2CdkStack/Assignment2/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Assignment2Deployment6A9327D8736a53c70b6faa751e31209338f95d2d"
+          }
+        ],
+        "/Assignment2CdkStack/Assignment2/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Assignment2DeploymentStageprodD9792F36"
+          }
+        ],
+        "/Assignment2CdkStack/Assignment2/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Assignment2EndpointE3C59857"
+          }
+        ],
+        "/Assignment2CdkStack/Assignment2/Default/retrieveall/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Assignment2retrieveall2622144A"
+          }
+        ],
+        "/Assignment2CdkStack/Assignment2/Default/retrieveall/GET/ApiPermission.Assignment2CdkStackAssignment2ACE744EE.GET..retrieveall": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Assignment2retrieveallGETApiPermissionAssignment2CdkStackAssignment2ACE744EEGETretrieveallA9C99D81"
+          }
+        ],
+        "/Assignment2CdkStack/Assignment2/Default/retrieveall/GET/ApiPermission.Test.Assignment2CdkStackAssignment2ACE744EE.GET..retrieveall": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Assignment2retrieveallGETApiPermissionTestAssignment2CdkStackAssignment2ACE744EEGETretrieveall572DD663"
+          }
+        ],
+        "/Assignment2CdkStack/Assignment2/Default/retrieveall/GET/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Assignment2retrieveallGET086C6BC3"
+          }
+        ],
+        "/Assignment2CdkStack/Assignment2/Default/retrievecourse/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Assignment2retrievecourseC0C69705"
+          }
+        ],
+        "/Assignment2CdkStack/Assignment2/Default/retrievecourse/GET/ApiPermission.Assignment2CdkStackAssignment2ACE744EE.GET..retrievecourse": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Assignment2retrievecourseGETApiPermissionAssignment2CdkStackAssignment2ACE744EEGETretrievecourse7D2F6454"
+          }
+        ],
+        "/Assignment2CdkStack/Assignment2/Default/retrievecourse/GET/ApiPermission.Test.Assignment2CdkStackAssignment2ACE744EE.GET..retrievecourse": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Assignment2retrievecourseGETApiPermissionTestAssignment2CdkStackAssignment2ACE744EEGETretrievecourseC81D7B7A"
+          }
+        ],
+        "/Assignment2CdkStack/Assignment2/Default/retrievecourse/GET/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Assignment2retrievecourseGET7F1AA6BE"
+          }
+        ],
+        "/Assignment2CdkStack/Assignment2/Default/deleteitem/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Assignment2deleteitemF045B88A"
+          }
+        ],
+        "/Assignment2CdkStack/Assignment2/Default/deleteitem/DELETE/ApiPermission.Assignment2CdkStackAssignment2ACE744EE.DELETE..deleteitem": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Assignment2deleteitemDELETEApiPermissionAssignment2CdkStackAssignment2ACE744EEDELETEdeleteitem33523343"
+          }
+        ],
+        "/Assignment2CdkStack/Assignment2/Default/deleteitem/DELETE/ApiPermission.Test.Assignment2CdkStackAssignment2ACE744EE.DELETE..deleteitem": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Assignment2deleteitemDELETEApiPermissionTestAssignment2CdkStackAssignment2ACE744EEDELETEdeleteitemEED0405E"
+          }
+        ],
+        "/Assignment2CdkStack/Assignment2/Default/deleteitem/DELETE/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Assignment2deleteitemDELETE5DFC36AB"
+          }
+        ],
+        "/Assignment2CdkStack/Assignment2/Default/insertitem/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Assignment2insertitemA038EDB4"
+          }
+        ],
+        "/Assignment2CdkStack/Assignment2/Default/insertitem/POST/ApiPermission.Assignment2CdkStackAssignment2ACE744EE.POST..insertitem": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Assignment2insertitemPOSTApiPermissionAssignment2CdkStackAssignment2ACE744EEPOSTinsertitem13A8E923"
+          }
+        ],
+        "/Assignment2CdkStack/Assignment2/Default/insertitem/POST/ApiPermission.Test.Assignment2CdkStackAssignment2ACE744EE.POST..insertitem": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Assignment2insertitemPOSTApiPermissionTestAssignment2CdkStackAssignment2ACE744EEPOSTinsertitemA84C13C8"
+          }
+        ],
+        "/Assignment2CdkStack/Assignment2/Default/insertitem/POST/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Assignment2insertitemPOST76B4B738"
+          }
+        ],
+        "/Assignment2CdkStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/Assignment2CdkStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/Assignment2CdkStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/Assignment2CdkStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "Assignment2CdkStack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}
